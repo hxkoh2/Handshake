@@ -13,6 +13,23 @@
 		1A7CB7C11AF1DC89000CAB53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7CB7C01AF1DC89000CAB53 /* Images.xcassets */; };
 		1A7CB7C41AF1DC89000CAB53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A7CB7C21AF1DC89000CAB53 /* LaunchScreen.xib */; };
 		1A7CB7D01AF1DC89000CAB53 /* HandshakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7CB7CF1AF1DC89000CAB53 /* HandshakeTests.swift */; };
+		1A7CB7DA1AF1DE49000CAB53 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7CB7D91AF1DE49000CAB53 /* ListViewController.swift */; };
+		1A7CB7DE1AF1DF64000CAB53 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7CB7DD1AF1DF64000CAB53 /* ItemsManager.swift */; };
+		1A7CB7E21AF1E02C000CAB53 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7CB7E11AF1E02C000CAB53 /* Contact.swift */; };
+		1A7CB7E41AF1F936000CAB53 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7CB7E31AF1F936000CAB53 /* SettingsViewController.swift */; };
+		1A7CB7E81AF3175F000CAB53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7CB7E71AF3175F000CAB53 /* UIKit.framework */; };
+		1A7CB7EA1AF31767000CAB53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7CB7E91AF31767000CAB53 /* CoreGraphics.framework */; };
+		1A7CB7EC1AF31771000CAB53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7CB7EB1AF31771000CAB53 /* Foundation.framework */; };
+		1A7CB7EE1AF3177D000CAB53 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7CB7ED1AF3177D000CAB53 /* MessageUI.framework */; };
+		1A7CB7F01AF31793000CAB53 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7CB7EF1AF31793000CAB53 /* CFNetwork.framework */; };
+		1A7CB7F21AF3179E000CAB53 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7CB7F11AF3179E000CAB53 /* CoreMotion.framework */; };
+		1A7CB7F41AF317AA000CAB53 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7CB7F31AF317AA000CAB53 /* CoreBluetooth.framework */; };
+		1A7CB7F61AF317B8000CAB53 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7CB7F51AF317B8000CAB53 /* ExternalAccessory.framework */; };
+		1A7CB7F81AF317CE000CAB53 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7CB7F71AF317CE000CAB53 /* libz.dylib */; };
+		1A7CB7FA1AF31869000CAB53 /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7CB7F91AF31869000CAB53 /* PebbleVendor.framework */; };
+		1A7CB7FC1AF31875000CAB53 /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7CB7FB1AF31875000CAB53 /* PebbleKit.framework */; };
+		1A7CB7FF1AF318B5000CAB53 /* Handshake-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7CB7FE1AF318B5000CAB53 /* Handshake-Bridging-Header.m */; };
+		1A7CB8011AF31991000CAB53 /* PebbleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7CB8001AF31991000CAB53 /* PebbleHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +53,25 @@
 		1A7CB7C91AF1DC89000CAB53 /* HandshakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandshakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7CB7CE1AF1DC89000CAB53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A7CB7CF1AF1DC89000CAB53 /* HandshakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandshakeTests.swift; sourceTree = "<group>"; };
+		1A7CB7D91AF1DE49000CAB53 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		1A7CB7DD1AF1DF64000CAB53 /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
+		1A7CB7E11AF1E02C000CAB53 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		1A7CB7E31AF1F936000CAB53 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1A7CB7E51AF31756000CAB53 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		1A7CB7E71AF3175F000CAB53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A7CB7E91AF31767000CAB53 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A7CB7EB1AF31771000CAB53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A7CB7ED1AF3177D000CAB53 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1A7CB7EF1AF31793000CAB53 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1A7CB7F11AF3179E000CAB53 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1A7CB7F31AF317AA000CAB53 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		1A7CB7F51AF317B8000CAB53 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		1A7CB7F71AF317CE000CAB53 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1A7CB7F91AF31869000CAB53 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleVendor.framework; path = Handshake/PebbleVendor.framework; sourceTree = "<group>"; };
+		1A7CB7FB1AF31875000CAB53 /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = Handshake/PebbleKit.framework; sourceTree = "<group>"; };
+		1A7CB7FD1AF318B5000CAB53 /* Handshake-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Handshake-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A7CB7FE1AF318B5000CAB53 /* Handshake-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Handshake-Bridging-Header.m"; sourceTree = "<group>"; };
+		1A7CB8001AF31991000CAB53 /* PebbleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PebbleHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +79,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7CB7FC1AF31875000CAB53 /* PebbleKit.framework in Frameworks */,
+				1A7CB7FA1AF31869000CAB53 /* PebbleVendor.framework in Frameworks */,
+				1A7CB7F81AF317CE000CAB53 /* libz.dylib in Frameworks */,
+				1A7CB7F61AF317B8000CAB53 /* ExternalAccessory.framework in Frameworks */,
+				1A7CB7F41AF317AA000CAB53 /* CoreBluetooth.framework in Frameworks */,
+				1A7CB7F21AF3179E000CAB53 /* CoreMotion.framework in Frameworks */,
+				1A7CB7F01AF31793000CAB53 /* CFNetwork.framework in Frameworks */,
+				1A7CB7EE1AF3177D000CAB53 /* MessageUI.framework in Frameworks */,
+				1A7CB7EC1AF31771000CAB53 /* Foundation.framework in Frameworks */,
+				1A7CB7EA1AF31767000CAB53 /* CoreGraphics.framework in Frameworks */,
+				1A7CB7E81AF3175F000CAB53 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +106,18 @@
 		1A7CB7AB1AF1DC89000CAB53 = {
 			isa = PBXGroup;
 			children = (
+				1A7CB7FB1AF31875000CAB53 /* PebbleKit.framework */,
+				1A7CB7F91AF31869000CAB53 /* PebbleVendor.framework */,
+				1A7CB7F71AF317CE000CAB53 /* libz.dylib */,
+				1A7CB7F51AF317B8000CAB53 /* ExternalAccessory.framework */,
+				1A7CB7F31AF317AA000CAB53 /* CoreBluetooth.framework */,
+				1A7CB7F11AF3179E000CAB53 /* CoreMotion.framework */,
+				1A7CB7EF1AF31793000CAB53 /* CFNetwork.framework */,
+				1A7CB7ED1AF3177D000CAB53 /* MessageUI.framework */,
+				1A7CB7EB1AF31771000CAB53 /* Foundation.framework */,
+				1A7CB7E91AF31767000CAB53 /* CoreGraphics.framework */,
+				1A7CB7E71AF3175F000CAB53 /* UIKit.framework */,
+				1A7CB7E51AF31756000CAB53 /* VideoToolbox.framework */,
 				1A7CB7B61AF1DC89000CAB53 /* Handshake */,
 				1A7CB7CC1AF1DC89000CAB53 /* HandshakeTests */,
 				1A7CB7B51AF1DC89000CAB53 /* Products */,
@@ -82,7 +141,14 @@
 				1A7CB7BD1AF1DC89000CAB53 /* Main.storyboard */,
 				1A7CB7C01AF1DC89000CAB53 /* Images.xcassets */,
 				1A7CB7C21AF1DC89000CAB53 /* LaunchScreen.xib */,
+				1A7CB7D91AF1DE49000CAB53 /* ListViewController.swift */,
+				1A7CB7DD1AF1DF64000CAB53 /* ItemsManager.swift */,
+				1A7CB7E11AF1E02C000CAB53 /* Contact.swift */,
+				1A7CB7E31AF1F936000CAB53 /* SettingsViewController.swift */,
+				1A7CB7FE1AF318B5000CAB53 /* Handshake-Bridging-Header.m */,
+				1A7CB7FD1AF318B5000CAB53 /* Handshake-Bridging-Header.h */,
 				1A7CB7B71AF1DC89000CAB53 /* Supporting Files */,
+				1A7CB8001AF31991000CAB53 /* PebbleHelper.swift */,
 			);
 			path = Handshake;
 			sourceTree = "<group>";
@@ -212,8 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7CB7FF1AF318B5000CAB53 /* Handshake-Bridging-Header.m in Sources */,
 				1A7CB7BC1AF1DC89000CAB53 /* ViewController.swift in Sources */,
 				1A7CB7BA1AF1DC89000CAB53 /* AppDelegate.swift in Sources */,
+				1A7CB7E21AF1E02C000CAB53 /* Contact.swift in Sources */,
+				1A7CB7DE1AF1DF64000CAB53 /* ItemsManager.swift in Sources */,
+				1A7CB7DA1AF1DE49000CAB53 /* ListViewController.swift in Sources */,
+				1A7CB7E41AF1F936000CAB53 /* SettingsViewController.swift in Sources */,
+				1A7CB8011AF31991000CAB53 /* PebbleHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,9 +410,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Handshake",
+				);
 				INFOPLIST_FILE = Handshake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Handshake/Handshake-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -348,9 +428,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Handshake",
+				);
 				INFOPLIST_FILE = Handshake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Handshake/Handshake-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +494,7 @@
 				1A7CB7D51AF1DC89000CAB53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A7CB7D61AF1DC89000CAB53 /* Build configuration list for PBXNativeTarget "HandshakeTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +503,7 @@
 				1A7CB7D81AF1DC89000CAB53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
