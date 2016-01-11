@@ -30,6 +30,7 @@
 		1A7CB7FC1AF31875000CAB53 /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7CB7FB1AF31875000CAB53 /* PebbleKit.framework */; };
 		1A7CB7FF1AF318B5000CAB53 /* Handshake-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7CB7FE1AF318B5000CAB53 /* Handshake-Bridging-Header.m */; };
 		1A7CB8011AF31991000CAB53 /* PebbleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7CB8001AF31991000CAB53 /* PebbleHelper.swift */; };
+		1AEAD1FC1C35E48E002FA2EC /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEAD1FB1C35E48E002FA2EC /* ConnectionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		1A7CB7FD1AF318B5000CAB53 /* Handshake-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Handshake-Bridging-Header.h"; sourceTree = "<group>"; };
 		1A7CB7FE1AF318B5000CAB53 /* Handshake-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Handshake-Bridging-Header.m"; sourceTree = "<group>"; };
 		1A7CB8001AF31991000CAB53 /* PebbleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PebbleHelper.swift; sourceTree = "<group>"; };
+		1AEAD1FB1C35E48E002FA2EC /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				1A7CB7FD1AF318B5000CAB53 /* Handshake-Bridging-Header.h */,
 				1A7CB7B71AF1DC89000CAB53 /* Supporting Files */,
 				1A7CB8001AF31991000CAB53 /* PebbleHelper.swift */,
+				1AEAD1FB1C35E48E002FA2EC /* ConnectionManager.swift */,
 			);
 			path = Handshake;
 			sourceTree = "<group>";
@@ -222,11 +225,14 @@
 		1A7CB7AC1AF1DC89000CAB53 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Hanna Koh";
 				TargetAttributes = {
 					1A7CB7B31AF1DC89000CAB53 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = B9N8V77FYV;
 					};
 					1A7CB7C81AF1DC89000CAB53 = {
 						CreatedOnToolsVersion = 6.2;
@@ -282,6 +288,7 @@
 				1A7CB7BC1AF1DC89000CAB53 /* ViewController.swift in Sources */,
 				1A7CB7BA1AF1DC89000CAB53 /* AppDelegate.swift in Sources */,
 				1A7CB7E21AF1E02C000CAB53 /* Contact.swift in Sources */,
+				1AEAD1FC1C35E48E002FA2EC /* ConnectionManager.swift in Sources */,
 				1A7CB7DE1AF1DF64000CAB53 /* ItemsManager.swift in Sources */,
 				1A7CB7DA1AF1DE49000CAB53 /* ListViewController.swift in Sources */,
 				1A7CB7E41AF1F936000CAB53 /* SettingsViewController.swift in Sources */,
@@ -361,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -398,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -411,16 +418,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Handshake",
 				);
 				INFOPLIST_FILE = Handshake/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Handshake/Handshake-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -429,15 +442,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Handshake",
 				);
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = Handshake/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Handshake/Handshake-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

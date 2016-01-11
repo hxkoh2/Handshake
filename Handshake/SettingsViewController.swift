@@ -18,7 +18,7 @@ class SettingsViewController: UIViewController {
     
     let itemsManager: ItemsManager
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         self.itemsManager = ItemsManager()
         super.init(coder: aDecoder)
     }

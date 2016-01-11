@@ -28,10 +28,10 @@ class Contact: NSObject, NSCoding {
     
     // MARK: NSCoding
     
-    required init(coder aDecoder: NSCoder) {
-        self.name = aDecoder.decodeObjectForKey(NameKey) as String
-        self.phone = aDecoder.decodeObjectForKey(PhoneKey) as String
-        self.email = aDecoder.decodeObjectForKey(EmailKey) as String
+    required init?(coder aDecoder: NSCoder) {
+        self.name = aDecoder.decodeObjectForKey(NameKey) as! String
+        self.phone = aDecoder.decodeObjectForKey(PhoneKey) as! String
+        self.email = aDecoder.decodeObjectForKey(EmailKey) as! String
         //super.init()
     }
     
