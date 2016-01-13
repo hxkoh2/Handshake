@@ -35,6 +35,7 @@ class ListViewController: UITableViewController, UINavigationControllerDelegate,
         pebbleHelper.delegate = self
         pebbleHelper.UUID = "477f4e78-fc52-4815-9963-c67dd72b18ca"
         connectionManager.delegate = self
+        
         /*// Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
         
@@ -78,9 +79,10 @@ class ListViewController: UITableViewController, UINavigationControllerDelegate,
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ListViewCell", forIndexPath: indexPath) as UITableViewCell
-        
+        cell.textLabel?.numberOfLines = 0;
+        cell.textLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping;
         let item = itemsManager.items[indexPath.row+1]
-        cell.textLabel?.text = item.name + "\n " + item.phone + "\n " + item.email
+        cell.textLabel?.text = item.name + "\n" + item.phone + "\n" + item.email
         
         return cell
     }
@@ -118,22 +120,24 @@ class ListViewController: UITableViewController, UINavigationControllerDelegate,
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if (editingStyle == UITableViewCellEditingStyle.Delete) {
             // handle delete (by removing the data from your array and updating the tableview)
-            tableView.beginUpdates()
+            //self.tableView.beginUpdates()
             itemsManager.items.removeAtIndex(indexPath.row+1)
             itemsManager.save()
-            tableView.deleteRowsAtIndexPaths([indexPath],  withRowAnimation: UITableViewRowAnimation.Automatic)
-            tableView.endUpdates()
+            self.tableView.deleteRowsAtIndexPaths([indexPath],  withRowAnimation: .Top)
+            //self.tableView.endUpdates()
+            self.tableView.reloadData()
         }
     }
     
     func newPersonViewController(newPersonView: ABNewPersonViewController, didCompleteWithNewPerson person: ABRecord?) {
         newPersonView.navigationController?.dismissViewControllerAnimated(true, completion: nil);
         if person != nil {
-            tableView.beginUpdates()
+            //tableView.beginUpdates()
             itemsManager.items.removeAtIndex(selectedRow.row+1)
             itemsManager.save()
-            tableView.deleteRowsAtIndexPaths([selectedRow], withRowAnimation: UITableViewRowAnimation.Automatic)
-            tableView.endUpdates()
+            tableView.deleteRowsAtIndexPaths([selectedRow], withRowAnimation: .Automatic)
+            //tableView.endUpdates()
+            tableView.reloadData()
         }
     }
     // MARK: Segues
@@ -164,20 +168,16 @@ extension ListViewController : ConnectionManagerDelegate {
         itemsManager.save()
         let insertionRow = itemsManager.items.count-2
         let indexPath = NSIndexPath(forRow:insertionRow , inSection: 0)
-        tableView.beginUpdates()
-        tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation:.Automatic)
-        tableView.endUpdates()
-        
+        print("Saved items")
+        //tableView.beginUpdates()
+        tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        //tableView.endUpdates()
+        tableView.reloadData()
+        print("inserted rows")
         connectionManager.serviceAdvertiser.stopAdvertisingPeer()
         connectionManager.serviceBrowser.stopBrowsingForPeers()
         print("Stopped advertising and browsing myself")
         
-        /*let alertController = UIAlertController(title: "Handshake", message: "Received new contact: \(contact.name)", preferredStyle: .Alert)
-        let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in }
-        alertController.addAction(OKAction)
-        self.presentViewController(alertController, animated: true) { }*/
-        
-
         var notification = UILocalNotification()
         notification.alertAction = "open"
         //notification.alertTitle = "Handshake received a contact"
